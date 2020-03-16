@@ -15,9 +15,11 @@ For example, a web-based email client could use the Contact Picker API to select
 ## Properties
 
 `**ContactsManager.getProperties()**`
+
 Returns the properties that are supported by the underlying system. The returned properties may be any of: `"name"`, `"email"`, `"tel"`, `"address"`, or `"icon"`.
 
 `**ContactsManager.select()**`
+
 Returns a promise and shows the contact picker, allowing the user to select the contact or contacts they want to share with the site. After selecting what to share and clicking Done, the promise resolves with an array of contacts selected by the user.
 
 When calling select() you must provide an array of properties you\'d like returned as the first parameter with the allowed values being any of: `"name"`, `"email"`, `"tel"`, `"address"`, or `"icon"`. The second, optional parameter specifies whether multiple contacts can be selected by the user.
