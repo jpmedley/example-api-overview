@@ -26,7 +26,7 @@ When calling select() you must provide an array of properties you\'d like return
 
 ## Examples
 
-The following example shows how to use `ContactsManager.select()`. After calling `select()` with the desired properties, a contact picker is shown to the user. The returned promise does not resolve until the user closes the contact picker. If the user selected contacts, the promise resolves with an array of `ContactProperties`. 
+The following example shows how to use `ContactsManager.select()`. After calling `select()` with the desired properties, a contact picker is shown to the user. The returned promise does not resolve until the user closes the contact picker. If the user selected contacts, the promise resolves with an array of `ContactInfo` objects. 
 
 ```js
 const props = ['name', 'email', 'tel', 'address', 'icon'];
@@ -40,7 +40,7 @@ try {
 }
 ```
 
-The `ContactProperties` array from the resolved promise.
+The `ContactInfo` array from the resolved promise.
 
 ```json
 [{
